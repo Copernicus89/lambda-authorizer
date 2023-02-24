@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strict": true,
+    "baseUrl": "./",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "esModuleInterop": true,
+    "inlineSourceMap": false,
+    "allowSyntheticDefaultImports": true,
+    "useUnknownInCatchVariables": false
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "roots": ["<rootDir>/src"],
+  "testMatch": ["**/__tests__/**/*.+(ts|tsx|js)", "**/?(*.)+(spec|test).+(ts|tsx|js)"],
+  "transform": {
+    "^.+\\.(ts|tsx)$": ["ts-jest", {
+      "tsconfig": "<rootDir>/tsconfig.test.json",
+      "stringifyContentPathRegex": "\\.html$"
+    }]
+  },
+  "collectCoverageFrom": ["src/**/*.ts", "!src/test/**/*factory.ts"],
+  "testPathIgnorePatterns": ["<rootDir>/node_modules/", "<rootDir>/dist/", "<rootDir>/dist-tmp/", "<rootDir>/target/"],
+  "coverageReporters": ["json", "html", "text", "lcov"]
+}

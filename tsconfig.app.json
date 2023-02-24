@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist-tmp",
+    "types": [
+      "node"
+    ],
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "src/test/**/*.ts"
+  ]
+}
